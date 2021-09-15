@@ -1,85 +1,42 @@
-# 0x04. Python - More Data Structures: Set, Dictionary
+# ALX School High-level Programming :computer:
 
 ## Description
-What you should learn from this project:
-
-Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
-What are set and how to use them
-What are the most common methods of set and how to use them
-When to use sets versus lists
-How to iterate into a set
-What are dictionary and how to use them
-When to use dictionaries versus lists or sets
-What is a key in a dictionary
-How to iterate into a dictionary
-What is a lambda function
-What is map, reduce and map functions
+Holberton's curriculum for high-level programming. These projects are meant to help us learn how to use and apply the basic fundamental concepts from [low-level programming](./https://github.com/kai-dg/holbertonschool-low_level_programming) on a different programming language.
 
 ---
 
-### [0. Squared simple](./0-square_matrix_simple.py)
-* Write a function that computes the square value of all integers of a matrix.
+## Table of Contents :open_file_folder:
 
+### [0x00. Python - Hello, World](./0x00-python-hello_world)
 
-### [1. Search and replace](./1-search_replace.py)
-* Write a function that replaces all occurrences of an element by another in a new list.
+### [0x01. Python - if/else, loops, functions](./0x01-python-if_else_loops_functions)
 
+### [0x02. Python - import & modules](./0x02-python-import_modules)
 
-### [2. Unique addition](./2-uniq_add.py)
-* Write a function that adds all unique integers in a list (only once for each integer).
+### [0x03. Python - Data Structures: Lists, Tuples](./0x03-python-data_structures)
 
+### [0x04. Python - More Data Structures: Set, Dictionary](./0x04-python-more_data_structures)
 
-### [3. Present in both](./3-common_elements.py)
-* Write a function that returns a set of common elements in two sets.
+### [0x05. Python - Exceptions](./0x05-python-exceptions)
 
+### [0x06. Python - Classes and Objects](./0x06-python-classes)
 
-### [4. Only differents](./4-only_diff_elements.py)
-* Write a function that returns a set of all elements present in only one set.
+### [0x07. Python - Test-driven development](./0x07-python-test_driven_development)
 
+### [0x08. Python - More Classes and Objects](./0x08-python-more_classes)
 
-### [5. Number of keys](./5-number_keys.py)
-* Write a function that returns the number of keys in a dictionary.
+### [0x09. Python - Everything is object](./0x09-python-everything_is_object)
 
+### [0x0A. Python - Inheritance](./0x0A-python-inheritance)
 
-### [6. Print sorted dictionary](./6-print_sorted_dictionary.py)
-* Write a function that prints a dictionary by ordered keys.
+### [0x0B. Python - Input/Output](./0x0B-python-input_output)
 
+### [0x0C. Python - Almost a circle](./0x0C-python-almost_a_circle)
 
-### [7. Update dictionary](./7-update_dictionary.py)
-* Write a function that replaces or adds key/value in a dictionary.
+### [0x0D. SQL - Introduction](./0x0D-SQL_introduction)
 
+### [0x0E. SQL - More queries](./0x0E-SQL_more_queries)
 
-### [8. Simple delete by key](./8-simple_delete.py)
-* Write a function that deletes a key in a dictionary.
+### [0x0F. Python - Object-relational mapping](./0x0F-python-object_relational_mapping)
 
-
-### [9. Multiply by 2](./9-multiply_by_2.py)
-* Write a function that returns a new dictionary with all values multiplied by 2
-
-
-### [10. Best score](./10-best_score.py)
-* Write a function that returns a key with the biggest integer value.
-
-
-### [11. Multiply by using map](./11-mutiply_list_map.py)
-* Write a function that returns a list with all values multiplied by a number without using any loops.
-
-
-### [12. Roman to Integer](./12-roman_to_int.py)
-* Technical interview preparation:
-
-
-### [13. Weighted average!](./100-weight_average.py)
-* Write a function that returns the weighted average of all integers tuple (<score>, <weight>)
-
-
-### [14. Squared by using map](./101-square_matrix_map.py)
-* Write a function that computes the square value of all integers of a matrix using map
-
-
-### [15. Delete by value](./102-complex_delete.py)
-* Write a function that deletes keys with a specific value in a dictionary.
-
-
-### [16. CPython #1: PyBytesObject](./103-python.c)
-* Create two C functions that print some basic info about Python lists and Python bytes objects.
+---
