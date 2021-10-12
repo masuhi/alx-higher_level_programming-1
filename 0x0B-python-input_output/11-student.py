@@ -1,25 +1,26 @@
 #!/usr/bin/python3
+"""
+Contains the clas "Student"
+"""
 
 
 class Student:
-    """student class for use
-    """
+    """Representation of a student"""
     def __init__(self, first_name, last_name, age):
+        """Initializes the student"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """retrieves dict rep of Student in json form
-        """
-        is_all_strs = True
-        if isinstance(attrs, list):
-            for ele in attrs:
-                if not isinstance(ele, str):
-                    is_all_strs = False
-                    
-        else:
-            is_all_strs = False
-
-                                                                                                                                                                                  return {key: value for (key, value) in self.__dict__.items()
-                if key in list(self.__dict__.keys()) and                                                                                                                                  (not is_all_strs or key in attrs)}
+        """returns a dictionary representation of a Student instance
+        with specified attributes"""
+        if attrs is None:
+            return self.__dict__
+        new_dict = {}
+        for a in attrs:
+            try:
+                new_dict[a] = self.__dict__[a]
+            except:
+                pass
+        return new_dict
