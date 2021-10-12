@@ -21,5 +21,6 @@ class Student:
         for a in attrs:
             try:
                 new_dict[a] = self.__dict__[a]
-            pass
+            except: 
+                pass
         return new_dict
