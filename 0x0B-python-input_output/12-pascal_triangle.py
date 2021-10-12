@@ -17,5 +17,7 @@ def pascal_triangle(n):
             for j in range(0, len(ret_mat[i - 1]) + 1):
                 if j == 0 or j == len(ret_mat[i - 1]):
                     new_row.append(1)
-                else:                                                                                                                                                                         new_row.append(ret_mat[i - 1][j - 1] + ret_mat[i - 1][j])                                                                                                         ret_mat.append(new_row)
-    return ret_mat           
+                else:
+                    new_row.append(ret_mat[i - 1][j - 1] + ret_mat[i - 1][j])
+            ret_mat.append(new_row)
+    return ret_mat
