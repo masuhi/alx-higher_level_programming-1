@@ -15,27 +15,27 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-        
+
     @property
     def width(self):
         """getter od width"""
         return self.__width
-       
+
     @property
     def height(self):
         """getter of height"""
         return self.__height
-    
+
     @property
     def x(self):
         """getter of x"""
         return self.__x
-     
+
     @property
     def y(self):
         """getter of y"""
         return self.__y
-    
+
     @width.setter
     def width(self, value):
         """setter of width"""
@@ -44,7 +44,7 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-         
+
     @height.setter
     def height(self, value):
         """setter of height"""
@@ -53,7 +53,7 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
-        
+
     @x.setter
     def x(self, value):
         """setter of x"""
@@ -62,7 +62,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-          
+
     @y.setter
     def y(self, value):
         """setter of y"""
@@ -71,17 +71,17 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-        
+
     def area(self):
         """calculates the area of the rectangle"""
         return self.__width * self.__height
-     
+
     def display(self):
         """print a display of the rectangle"""
         print(("\n" * self.__y) +
               "\n".join(((" " * self.__x) + ("#" * self.__width))
                         for i in range(self.__height)))
-               
+
     def __str__(self):
         """informal string representation of the rectangle"""
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
@@ -89,6 +89,7 @@ class Rectangle(Base):
                                                                  self.__y,
                                                                  self.__width,
                                                                  self.__height)
+
     def update(self, *args, **kwargs):
         """updates multiple attributes"""
         if len(args):
@@ -114,7 +115,7 @@ class Rectangle(Base):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
-                 
+
     def to_dictionary(self):
         """dictionary representation of a Rectangle"""
         d = {}
