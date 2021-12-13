@@ -1,9 +1,18 @@
 #!/usr/bin/node
-'use strict';
-let nextMax = 0;
-let args = process.argv.slice(2);
-if (args.length > 1) {
-  args.sort();
-  nextMax = args[args.length - 2];
-}
-console.log(nextMax);
+const args = process.argv;
+let bigest = 0;
+let secBig = 0;
+let num;
+if (process.argv.length < 4) {
+  console.log('0');
+} else {
+  for (let i = 2; i < args.length; i++) {
+    num = parseInt(args[i]);
+    if (num > bigest) {
+      secBig = bigest;
+      bigest = num;
+    } else if (num > secBig) {
+      secBig = num;
+    }
+  }
+  console.log(secBig
