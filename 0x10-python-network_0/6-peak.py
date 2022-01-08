@@ -1,21 +1,16 @@
 #!/usr/bin/python3
-'''task 6 module'''
+"""contains the function find_peak"""
 
 
 def find_peak(list_of_integers):
-    '''finds a peak in a list of unsorted integers'''
-    last_peak = None
-    for idx, n in enumerate(list_of_integers):
-        if idx > 0 and idx < len(list_of_integers) - 1:
-            if n > list_of_integers[idx + 1]:
-                if n > list_of_integers[idx - 1]:
-                    return n
-            elif n == list_of_integers[idx + 1]:
-                if n == list_of_integers[idx - 1]:
-                    if last_peak is not None and last_peak < n:
-                        last_peak = n
-                    elif last_peak is None:
-                        last_peak = n
-    if last_peak is not None:
-        return last_peak
-    return None
+    """finds a peak in a list of unsorted integers"""
+    li = list_of_integers
+    l = len(li)
+    if l == 0:
+        return
+    m = l // 2
+    if (m == l - 1 or li[m] >= li[m + 1]) and (m == 0 or li[m] >= li[m - 1]):
+        return li[m]
+    if m != l - 1 and li[m + 1] > li[m]:
+        return find_peak(li[m + 1:])
+    return find_peak(li[:m])
